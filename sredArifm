@@ -1,0 +1,22 @@
+program p1;
+
+var 
+  all,num,i,col : integer;
+  sred : real;
+    
+begin
+  all:=0;
+  col:=0;
+  sred:=0;
+  num:=0;
+  for i:=1 to 15 do
+    begin
+      num:=random(31);
+      all:=all+num;
+      writeln(num);
+      col:=col+1;
+    end;
+  writeln(col);
+  sred:=all/col;
+  writeln(sred);
+end.
