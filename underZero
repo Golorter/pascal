@@ -1,0 +1,15 @@
+program p2;
+
+var 
+  num,i,col : integer;   
+begin
+  col:=0;
+  num:=0;
+  for i:=1 to 15 do
+    begin
+      num:=random(101)-50;
+      writeln(num);
+      if num>0 then col:=col+1;
+    end;
+  writeln(col);
+end.
